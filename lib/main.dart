@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kitchenly/pages/onboarding/onboarding_screen.dart';
+import 'package:kitchenly/pages/register/login_screen.dart';
+import 'package:kitchenly/pages/register/register_screen.dart';
 import 'package:kitchenly/pages/splash/splash_screen.dart';
 
 
@@ -18,9 +21,9 @@ class MyApp extends StatelessWidget {
       initialRoute: SplashScreen.routeName,
       routes: {
         SplashScreen.routeName:(context)=>SplashScreen(),
-        // OnboardingScreen.routeName:(context)=>OnboardingScreen(),
-        // LoginScreen.routeName:(context)=>LoginScreen(),
-        // RegisterScreen.routeName:(context)=>RegisterScreen(),
+        OnboardingScreen.routeName:(context)=>OnboardingScreen(),
+        LoginScreen.routeName:(context)=>LoginScreen(),
+         RegisterScreen.routeName:(context)=>RegisterScreen(),
         // HomeScreen.routeName:(context)=>HomeScreen(),
       },
 
