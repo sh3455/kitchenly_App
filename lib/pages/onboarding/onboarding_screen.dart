@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../color/app_colors.dart';
 import '../../model/onboarding/onboarding_model.dart';
+import '../register/login_screen.dart';
 import 'onboarding_item.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -58,10 +59,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         if(activeIndex < OnboardingModel.onboardingModel.length){
           activeIndex++;
         }else{
-          // Navigator.pushReplacement(context,
-          //     MaterialPageRoute(builder: (context) {
-          //       return LoginScreen();
-          //     },));
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) {
+                return LoginScreen();
+              },));
         }
       },
       child: Container(
