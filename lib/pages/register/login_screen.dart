@@ -5,6 +5,7 @@ import '../../color/app_colors.dart';
 import '../../widget/Register/custom_button.dart';
 import '../../widget/Register/custom_social_media.dart';
 import '../../widget/Register/custom_text_field.dart';
+import '../home/home_screen.dart';
 
 
 class LoginScreen extends StatelessWidget {
@@ -40,10 +41,10 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: size.height*0.02,),
             CustomButton(
               onTap: (){
-                // Navigator.pushReplacement(context,
-                //     MaterialPageRoute(builder: (context) {
-                //   return HomeScreen();
-                // },));
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) {
+                  return HomeScreen();
+                },));
               },
                 textButton: "Login"),
             SizedBox(height: size.height*0.02,),
