@@ -4,6 +4,7 @@ import '../../color/app_colors.dart';
 import '../../widget/Register/custom_button.dart';
 import '../../widget/Register/custom_social_media.dart';
 import '../../widget/Register/custom_text_field.dart';
+import '../home/home_screen.dart';
 import 'login_screen.dart';
 
 class RegisterScreen extends StatelessWidget {
@@ -40,7 +41,15 @@ class RegisterScreen extends StatelessWidget {
             CustomTextField(hinttext: "Confirm Password", icon: Icons.lock_outline),
             SizedBox(height: size.height*0.02,),
 
-            CustomButton(textButton: "Register"),
+            CustomButton(
+              onTap: (){
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) {
+                      return HomeScreen();
+                    },));
+
+              },
+                textButton: "Register"),
             SizedBox(height: size.height*0.02,),
             Row(
               children: [
